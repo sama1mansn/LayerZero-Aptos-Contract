@@ -1,7 +1,7 @@
 include Makefile.config
 export PATH := deps/aptos-core/target/release/:$(PATH)
 
-.PHONY: build install-aptos test compile local-node
+.PHONY: build install-aptos test compile local-node local-node
 
 install-aptos:
 	cd deps/aptos-core && cargo install --profile release --path crates/aptos
